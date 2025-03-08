@@ -24,7 +24,7 @@
     <!-- --------- FAVICON ---------- -->
     <link rel="shortcut icon" href="assets/images/favicon3.png" type="image/x-icon">
 
-    <title>Portfolio</title>
+    <title>Nithish Kumar</title>
 </head>
 
 <body>
@@ -46,6 +46,11 @@
                         <div class="circle"></div>
                     </li>
                     <li class="nav_list">
+                        <a href="#work-experience" class="nav-link">Experience</a>
+                        <div class="circle"></div>
+                    </li>
+
+                    <li class="nav_list">
                         <a href="#projects" class="nav-link">Projects</a>
                         <div class="circle"></div>
                     </li>
@@ -56,7 +61,7 @@
                 </ul>
             </div>
             <div class="nav-button">
-                <button class="btn" onclick="downloadResume()">Download CV <i class="uil uil-file-alt"></i></button>
+                <button class="btn" onclick="openResume()">Download CV <i class="uil uil-file-alt"></i></button>
             </div>
             <div class="nav-menu-btn">
                 <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -70,7 +75,7 @@
             <section class="featured-box" id="home">
                 <div class="featured-text">
                     <div class="featured-text-card">
-                        <span>Nithish Kumar</span>
+                        <span>Nithish Kumar Venkatesan</span>
                     </div>
                     <div class="featured-name">
                         <p>I'm <span class="typedText"></span></p>
@@ -82,8 +87,7 @@
                     </div>
                     <div class="featured-text-btn">
                         <button class="btn blue-btn">Hire Me</button>
-                        <button class="btn" onclick="downloadResume()">Download CV <i
-                                class="uil uil-file-alt"></i></button>
+                        <button class="btn" onclick="openResume()">Download CV <i class="uil uil-file-alt"></i></button>
                     </div>
                     <div class="social_icons">
                         <a href="https://www.linkedin.com/in/nithishkumarvenkatesan/" target="_blank" class="icon">
@@ -115,14 +119,23 @@
                 <div class="row">
                     <div class="col">
                         <div class="about-info">
-                            <h3>My introduction</h3>
-                            <p>I specialize in Full-Stack Development with a strong focus on backend and cloud
-                                technologies.
-                                Proficient in the MERN stack, I build scalable, AI-driven applications leveraging cloud
-                                platforms like AWS and Google Cloud.
-                                My experience extends to serverless architectures, API development, and database
-                                management, ensuring high-performance and resilient systems.
-                            </p>
+                            <ul>
+                                <li>
+                                    I'm currently pursuing my Master’s in Computer Science, building upon my experience
+                                    as a
+                                    Software Engineer. With hands-on expertise in Full-Stack Development, Cloud
+                                    Technologies, and AI-driven solutions, I specialize in designing scalable
+                                    applications
+                                    that integrate modern tech stacks like MERN, AWS, and Google Cloud.
+                                </li>
+                                <li>
+                                    Beyond coding, I’m passionate about go to gym, hiking, and continuously exploring
+                                    new
+                                    innovations in tech. Whether it's optimizing backend systems, deploying cloud
+                                    architectures, or pushing my limits outdoors, I thrive on challenges and continuous
+                                    learning.
+                                </li>
+                            </ul>
                             <div class="about-btn">
                                 <button class="btn" onclick="downloadResume()">Download CV <i
                                         class="uil uil-import"></i></button>
@@ -151,6 +164,7 @@
                                 <span>Java</span>
                                 <span>Spring Boot</span>
                                 <span>NodeJs</span>
+                                <span>Express</span>
                                 <span>Python</span>
                                 <span>C#</span>
                                 <span>C++</span>
@@ -179,6 +193,67 @@
                 </div>
             </section>
 
+            <!-- -------------- WORK EXPERIENCE SECTION ---------------- -->
+            <section class="section work-experience" id="work-experience">
+                <div class="top-header">
+                    <h1>Work Experience</h1>
+                </div>
+                <div class="timeline">
+
+                    <!-- Experience 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="uil uil-briefcase-alt"></i></div>
+                        <div class="timeline-content">
+                            <h3>Associate Software Engineer</h3>
+                            <p><strong>EMIS Health India</strong> | Sept 2022 - Aug 2023</p>
+                            <ul>
+                                <li>Optimized real-time data synchronization, ensuring user demographic updates in under
+                                    4 seconds across multiple platforms.</li>
+                                <li>Developed and maintained high-quality C# and SQL-based solutions, improving system
+                                    efficiency and performance.</li>
+                                <li>Collaborated with UI/UX teams to streamline user interactions, reducing task
+                                    completion times and increasing customer satisfaction by 18%.</li>
+                                <li>Reduced high-severity incident reports by 40% through systematic debugging and
+                                    rigorous testing, enhancing application stability.
+                                </li>
+                                <li>Saved 12 hours of bug-related downtime per month by implementing object-oriented
+                                    design principles and improving maintainability.
+                                </li>
+                                <li>Enhanced system scalability, security, and efficiency by optimizing database queries
+                                    and applying best development practices.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-icon"><i class="uil uil-building"></i></div>
+                        <div class="timeline-content">
+                            <h3>Workday Graduate Engineer</h3>
+                            <p><strong>Alight Solutions</strong> | May 2021 - Aug 2022</p>
+                            <ul>
+                                <li>Developed and deployed seamless Workday integrations using Workday Studio, EIBs, and
+                                    REST APIs, ensuring smooth data flow across HR, payroll, and financial systems.</li>
+                                <li>Refactored existing Workday integrations, improving performance by 30% and ensuring
+                                    scalability to handle increased data volume.</li>
+                                <li>Implemented security best practices for Workday integrations, ensuring compliance
+                                    with data privacy standards and internal security policies.
+                                </li>
+                                <li>
+                                    Partnered with HR, finance, and IT teams to understand business needs and deliver
+                                    tailored Workday solutions that improved workflow efficiency.
+                                </li>
+                                <li>
+                                    Conducted rigorous integration testing, UAT, and production deployment to ensure
+                                    seamless transitions with minimal disruption
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
             <!-- -------------- USER PROJECTS SECTION ---------------- -->
             <section class="section" id="projects">
                 <div class="top-header">
@@ -198,22 +273,23 @@
                         <h3>Video AI Summarizer Agent</h3>
                         <p>Developed an AI-driven video summarization tool with Python, Streamlit, and Google Gemini AI.
                         </p>
-                        <a href="https://github.com/nithishkumar16/video-ai-summarizer" target="_blank" class="btn">View
+                        <a href="https://github.com/nithishkumar16/AI-Video-Summarizer" target="_blank" class="btn">View
                             on GitHub</a>
                     </div>
                     <div class="project-box">
                         <i class="uil uil-dumbbell"></i>
                         <h3>FitFlex - Workout Manager</h3>
                         <p>Designed a scalable fitness app with AWS Lambda, DynamoDB, RDS, and React-based frontend.</p>
-                        <a href="https://github.com/nithishkumar16/fitflex-workout" target="_blank" class="btn">View on
-                            GitHub</a>
+                        <a href="http://fitflex.nithish.s3-website-us-east-1.amazonaws.com/" target="_blank"
+                            class="btn">Live Link</a>
                     </div>
                     <div class="project-box">
                         <i class="uil uil-brain"></i>
                         <h3>SmartLens AI 2.0</h3>
                         <p>Created an AI-powered social media analyzer using Google Cloud, Pinterest API, and Google
                             Vision API.</p>
-                        <a href="https://github.com/nithishkumar16/smartlens-ai" target="_blank" class="btn">View on
+                        <a href="https://github.com/nithishkumar16/SmartLensAI-project2" target="_blank"
+                            class="btn">View on
                             GitHub</a>
                     </div>
                 </div>
@@ -226,6 +302,8 @@
                 <div class="top-header">
                     <h1>Get in touch</h1>
                     <span>Do you have a project in your mind, contact me here</span>
+                    <p class="contact-note">Yes, this form actually works! Drop me a message and I’ll get back to you
+                        soon.</p>
                 </div>
                 <div class="row">
                     <div class="col">
@@ -291,9 +369,7 @@
                 </ul>
             </div>
             <div class="footer-social-icons">
-                <div class="icon"><i class="uil uil-instagram"></i></div>
                 <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                <div class="icon"><i class="uil uil-dribbble"></i></div>
                 <div class="icon"><i class="uil uil-github-alt"></i></div>
             </div>
             <div class="bottom-footer">

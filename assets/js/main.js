@@ -38,11 +38,11 @@ var typingEffect = new Typed(".typedText", {
 });
 
 /*------download resume button------*/
-function downloadResume() {
-  const fileId = "17mx4mYLyaz2JAs0lYG9ocltkIDdHzOfN";
-  const directDownloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+function openResume() {
+  const fileId = "1KydeZRdocgGc7uJeU6yLYXKfHfjDcWao";
+  const viewUrl = `https://drive.google.com/file/d/${fileId}/view`; // View link
 
-  window.open(directDownloadUrl, "_blank");
+  window.open(viewUrl, "_blank");
 }
 
 /* ----- ## -- SCROLL REVEAL ANIMATION -- ## ----- */
@@ -50,7 +50,8 @@ const sr = ScrollReveal({
   origin: "top",
   distance: "80px",
   duration: 2000,
-  reset: true,
+  reset: false,
+  once: true
 });
 
 /* -- HOME -- */
@@ -74,10 +75,12 @@ const srLeft = ScrollReveal({
   origin: "left",
   distance: "80px",
   duration: 2000,
-  reset: true,
+  reset: false,
+  once: true,
 });
 
 srLeft.reveal(".about-info", { delay: 100 });
+srLeft.reveal(".work-experience", { delay: 150 });
 srLeft.reveal(".contact-info", { delay: 100 });
 
 /* -- ABOUT SKILLS & FORM BOX -- */
@@ -85,7 +88,8 @@ const srRight = ScrollReveal({
   origin: "right",
   distance: "80px",
   duration: 2000,
-  reset: true,
+  reset: false,
+  once: true,
 });
 
 srRight.reveal(".skills-box", { delay: 100 });

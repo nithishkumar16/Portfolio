@@ -408,6 +408,108 @@ h3 {
     gap: 30px;
 }
 
+/* ----- TIMELINE FIX ----- */
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background: var(--first-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* TIMELINE ITEM */
+.timeline-item {
+    position: relative;
+    margin: 40px 0;
+    width: 50%;
+    padding: 20px;
+    background: var(--color-white);
+    border-radius: 10px;
+    box-shadow: 1px 4px 10px 2px var(--first-shadow-color);
+}
+
+/* Left-side experience */
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+/* Right-side experience */
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+/* TIMELINE CONTENT */
+.timeline-content {
+    padding: 10px 20px;
+    background: var(--color-white);
+    position: relative;
+    border-radius: 10px;
+}
+
+/* Make sure text alignment is correct */
+.timeline-item:nth-child(odd) .timeline-content {
+    text-align: left;
+}
+
+/* TIMELINE ICON */
+.timeline-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: var(--first-color);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    z-index: 2;
+}
+
+/* Adjust icon positioning for left and right items */
+.timeline-item:nth-child(odd) .timeline-icon {
+    left: calc(100% + 20px);
+    /* Move icon outside the card */
+}
+
+.timeline-item:nth-child(even) .timeline-icon {
+    left: -30px;
+    /* Move icon outside the card */
+}
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 768px) {
+    .timeline::after {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 50px;
+    }
+
+    .timeline-icon {
+        left: 0px;
+        /* Fixes icon position for mobile */
+        transform: translateY(-50%);
+    }
+}
+
+
+
 /* ----- PROJECTS BOX ----- */
 .project-box {
     position: relative;
@@ -533,8 +635,8 @@ h3 {
 
 .form-inputs {
     display: flex;
-    gap: 10px;
-    width: 100%;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 
 .input-field {
@@ -573,6 +675,14 @@ textarea {
 .form-button i {
     font-size: 18px;
     rotate: -45deg;
+}
+
+.contact-note {
+    font-size: 14px;
+    color: var(--text-color-second);
+    margin-top: 10px;
+    font-weight: 500;
+    font-style: italic;
 }
 
 /* ----- FOOTER BOX ----- */
@@ -743,4 +853,10 @@ footer {
     .input-field {
         width: 100%;
     }
+}
+
+.section {
+    opacity: 1 !important;
+    /* ✅ Ensures sections are visible after animation */
+    visibility: visible !important;
 }
