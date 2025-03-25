@@ -39,7 +39,7 @@ var typingEffect = new Typed(".typedText", {
 
 /*------download resume button------*/
 function openResume() {
-  const fileId = "1KydeZRdocgGc7uJeU6yLYXKfHfjDcWao";
+  const fileId = "1WKuPezBQhb-e0YCgE9k9Ek3Q0EBRPd63";
   const viewUrl = `https://drive.google.com/file/d/${fileId}/view`; // View link
 
   window.open(viewUrl, "_blank");
